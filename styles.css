@@ -5,9 +5,10 @@
     /* Añade otros formatos de fuente según sea necesario */
 }
 
-/* Aplica la fuente personalizada y convierte todo el texto en mayúsculas */
+/* Aplica la fuente Muli y convierte todo el texto a mayúsculas */
 body {
-    font-family: 'CubaoFreeRegular', Arial, sans-serif;
+    font-family: 'Muli', Arial, sans-serif;
+    font-size: 22px;
     text-transform: uppercase; /* Convierte todo el texto a mayúsculas */
     margin: 0;
     padding: 0;
@@ -53,25 +54,4 @@ body {
 
 h2 {
     margin-top: 20px; /* Ajustado margen superior del título */
-    font-family: 'CubaoFreeRegular', Arial, sans-serif; /* Aplica la fuente al título */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label, form select, form input, form button {
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
+    font-family: 'CubaoFreeRegular', Arial, sans-serif; /
