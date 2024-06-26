@@ -65,13 +65,14 @@ h2 {
     font-family: 'CubaoFreeRegular', Arial, sans-serif; 
 }
 
-/* Aplicar la fuente Muli-Black solo a las secciones específicas */
+/* Aplicar la fuente Muli-Black solo a las secciones específicas y cambiar el tamaño de la fuente */
 #booking label[for="service"],
 #booking label[for="date"],
 #booking label[for="time"] {
     font-family: 'Muli-Black', Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    font-size: 18px; /* Especificar el tamaño de la fuente */
 }
 
 form {
@@ -92,8 +93,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
-
-h2 {
-    margin-top: 20px; /* Ajustado margen superior del título */
-    font-family: 'CubaoFreeRegular', Arial, sans-serif; /
