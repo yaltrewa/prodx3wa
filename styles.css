@@ -5,6 +5,14 @@
     /* Añade otros formatos de fuente según sea necesario */
 }
 
+/* Define @font-face para la fuente Muli Black */
+@font-face {
+    font-family: 'Muli-Black';
+    src: url('fonts/Muli-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 /* Aplica la fuente Muli y convierte todo el texto a mayúsculas */
 body {
     font-family: 'Muli', Arial, sans-serif;
@@ -51,6 +59,40 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+h2 {
+    margin-top: 20px; /* Ajustado margen superior del título */
+    font-family: 'CubaoFreeRegular', Arial, sans-serif; 
+}
+
+/* Aplicar la fuente Muli-Black solo a las secciones específicas */
+#booking label[for="service"],
+#booking label[for="date"],
+#booking label[for="time"] {
+    font-family: 'Muli-Black', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form select, form input, form button {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
 
 h2 {
     margin-top: 20px; /* Ajustado margen superior del título */
