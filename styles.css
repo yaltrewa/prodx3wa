@@ -1,5 +1,14 @@
+/* Define @font-face para la fuente personalizada */
+@font-face {
+    font-family: 'CubaoFreeRegular';
+    src: url('fonts/Cubao_Free_Regular.otf') format('opentype');
+    /* Añade otros formatos de fuente según sea necesario */
+}
+
+/* Aplica la fuente personalizada y convierte todo el texto en mayúsculas */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'CubaoFreeRegular', Arial, sans-serif;
+    text-transform: uppercase; /* Convierte todo el texto a mayúsculas */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -44,6 +53,7 @@ body {
 
 h2 {
     margin-top: 20px; /* Ajustado margen superior del título */
+    font-family: 'CubaoFreeRegular', Arial, sans-serif; /* Aplica la fuente al título */
 }
 
 form {
@@ -64,3 +74,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
