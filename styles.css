@@ -70,6 +70,7 @@ h2 {
 #booking label[for="service"],
 #booking label[for="date"],
 #booking label[for="time-hour"],
+#booking label[for="time-minute"],
 h2 {
     font-family: 'Muli-Black', Arial, sans-serif !important;
     font-weight: 900;
@@ -86,36 +87,6 @@ form {
 
 form label, form select, form input, form button {
     margin-bottom: 10px;
-}
-
-/* Estilos para los selectores de hora */
-#time-hour {
-    width: calc(50% - 5px); /* Ancho del 50% del contenedor, menos un pequeño espacio */
-    margin-right: 10px; /* Espacio entre los selectores */
-    font-family: 'Muli-Black', Arial, sans-serif; /* Fuente */
-    font-size: 15px; /* Tamaño de fuente */
-    text-transform: uppercase; /* Convertir el texto a mayúsculas */
-}
-
-#time-minute {
-    display: none; /* Ocultar el selector de minutos */
-}
-
-button[type="submit"] {
-    margin-top: 10px; /* Espacio superior */
-    padding: 10px; /* Padding interno */
-    font-family: 'Muli-Black', Arial, sans-serif; /* Fuente */
-    font-size: 15px; /* Tamaño de fuente */
-    text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color de texto */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cursor de puntero */
-    transition: background-color 0.3s ease; /* Transición suave */
-}
-
-button[type="submit"]:hover {
-    background-color: #555; /* Cambio de color al pasar el ratón */
 }
 
 footer {
