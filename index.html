@@ -22,7 +22,13 @@
             <label for="date">Selecciona una fecha:</label>
             <input type="date" id="date" name="date" required>
             <label for="time">Selecciona una hora:</label>
-            <input type="time" id="time" name="time" required>
+            <select id="time-hour" name="time-hour" required>
+                <!-- Options for hours from 9:00 AM to 8:00 PM will be added dynamically -->
+            </select>
+            <select id="time-minute" name="time-minute" required>
+                <option value="00">00</option>
+                <option value="30">30</option>
+            </select>
             <button type="submit">Reservar</button>
         </form>
     </section>
@@ -31,18 +37,50 @@
     </footer>
 
     <script>
-        document.getElementById('booking-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const service = document.getElementById('service').value;
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
-            const whatsappUrl = `https://wa.me/tu_numero_de_whatsapp?text=Hola,%20quiero%20reservar%20${service}%20el%20${date}%20a%20las%20${time}.`;
-            window.open(whatsappUrl, '_blank');
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('booking-form');
+            const timeHourSelect = document.getElementById('time-hour');
+            const timeMinuteSelect = document.getElementById('time-minute');
+            
+            // Generar opciones de hora desde las 9:00 AM hasta las 8:00 PM
+            for (let hour = 9; hour <= 20; hour++) {
+                const option = document.createElement('option');
+                option.text = hour < 10 ? `0${hour}:00` : `${hour}:00`;
+                option.value = hour < 10 ? `0${hour}` : `${hour}`;
+                timeHourSelect.add(option);
+            }
+            
+            // Función para actualizar las opciones de minutos según la hora seleccionada
+            timeHourSelect.addEventListener('change', function() {
+                const selectedHour = parseInt(timeHourSelect.value, 10);
+                const startMinute = selectedHour % 1 === 0 ? 0 : 30; // Si la hora seleccionada es entera, los minutos comienzan en 0; de lo contrario, comienzan en 30
+                
+                // Limpiar las opciones actuales de minutos y añadir las nuevas opciones
+                timeMinuteSelect.innerHTML = '';
+                for (let minute = startMinute; minute < 60; minute += 30) {
+                    const option = document.createElement('option');
+                    option.text = minute < 10 ? `0${minute}` : `${minute}`;
+                    option.value = minute < 10 ? `0${minute}` : `${minute}`;
+                    timeMinuteSelect.add(option);
+                }
+            });
+            
+            // Validar y enviar el formulario
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const service = document.getElementById('service').value;
+                const date = document.getElementById('date').value;
+                const timeHour = document.getElementById('time-hour').value;
+                const timeMinute = document.getElementById('time-minute').value;
+                
+                const whatsappUrl = `https://wa.me/tu_numero_de_whatsapp?text=Hola,%20quiero%20reservar%20${service}%20el%20${date}%20a%20las%20${timeHour}:${timeMinute}.`;
+                window.open(whatsappUrl, '_blank');
+            });
+            
+            // Establecer la fecha mínima como la fecha actual
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('date').min = today;
         });
-
-        // Establecer la fecha mínima como la fecha actual
-        const today = new Date().toISOString().split('T')[0];
-        document.getElementById('date').min = today;
     </script>
 </body>
 </html>
