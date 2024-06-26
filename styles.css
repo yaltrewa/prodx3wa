@@ -72,7 +72,7 @@ h2 {
     font-family: 'Muli-Black', Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    font-size: 18px; /* Especificar el tamaño de la fuente */
+    font-size: 10px; /* Especificar el tamaño de la fuente */
 }
 
 form {
