@@ -89,6 +89,33 @@ form label, form select, form input, form button {
     margin-bottom: 10px;
 }
 
+/* Estilos para los selectores de hora */
+#time-hour,
+#time-minute {
+    width: calc(50% - 5px); /* Ancho del 50% del contenedor, menos un pequeño espacio */
+    margin-right: 10px; /* Espacio entre los selectores */
+    font-family: 'Muli-Black', Arial, sans-serif; /* Fuente */
+    font-size: 15px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+}
+
+button[type="submit"] {
+    margin-top: 10px; /* Espacio superior */
+    padding: 10px; /* Padding interno */
+    font-family: 'Muli-Black', Arial, sans-serif; /* Fuente */
+    font-size: 15px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button[type="submit"]:hover {
+    background-color: #555; /* Cambio de color al pasar el ratón */
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
@@ -98,3 +125,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
