@@ -63,25 +63,17 @@ body {
 
 h2 {
     margin-top: 20px; /* Ajustado margen superior del título */
-    font-family: 'CubaoFreeRegular', Arial, sans-serif; 
+    font-family: 'CubaoFreeRegular', Arial, sans-serif;
 }
 
-/* Aplicar la fuente Muli-Black a todas las etiquetas de formulario */
-#booking label[for="service"],
-#booking label[for="date"],
-#booking label[for="time-hour"],
-#booking label[for="time-minute"] {
+/* Aplicar la fuente Muli-Black a todas las etiquetas de formulario excepto el título */
+#booking form label:not(h2) {
     font-family: 'Muli-Black', Arial, sans-serif !important;
     font-weight: 900;
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    font-size: 15px !important; /* Especificar el tamaño de la fuente */
+    font-size: 15px; /* Especificar el tamaño de la fuente */
     color: #333; /* Color de texto */
-}
-
-/* Ajustar el estilo de las etiquetas para mantener la consistencia */
-#booking label[for="date"],
-#booking label[for="time-hour"] {
-    margin-bottom: 5px; /* Ajuste de espaciado inferior */
+    margin-bottom: 5px; /* Espaciado inferior */
 }
 
 form {
