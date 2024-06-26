@@ -20,8 +20,7 @@ body {
     text-transform: uppercase; /* Convierte todo el texto a mayúsculas */
     margin: 0;
     padding: 0;
-    background: url('images/fondo pagina.png') no-repeat center center fixed; 
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +68,9 @@ h2 {
 /* Aplicar la fuente Muli-Black solo a las secciones específicas y cambiar el tamaño de la fuente */
 #booking label[for="service"],
 #booking label[for="date"],
-#booking label[for="time"] {
-    font-family: 'Muli-Black', Arial, sans-serif;
+#booking label[for="time-hour"],
+#booking label[for="time-minute"] {
+    font-family: 'Muli-Black', Arial, sans-serif !important;
     font-weight: 900;
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
     font-size: 15px !important; /* Especificar el tamaño de la fuente */
@@ -94,4 +94,5 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 
