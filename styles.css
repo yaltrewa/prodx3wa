@@ -60,12 +60,21 @@ body {
     background-position: center;
 }
 
-#booking label[for="service"],
-#booking label[for="date"],
-#booking label[for="time"],
 #booking h2 {
     font-family: 'CubaoFreeRegular', Arial, sans-serif !important; /* CubaoFreeRegular con !important */
     font-weight: normal;
+    font-size: 26px; /* Tamaño específico para el título RESERVA DE SERVICIOS */
+    color: #EBEBEB;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Aumentar el margen inferior */
+}
+
+#booking label[for="service"],
+#booking label[for="date"],
+#booking label[for="time"] {
+    font-family: 'Muli-Black', Arial, sans-serif !important;
+    font-weight: 900;
+    text-transform: uppercase;
     font-size: 15px !important;
     color: #EBEBEB !important;
     margin-bottom: 5px;
