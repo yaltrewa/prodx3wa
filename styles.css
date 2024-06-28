@@ -2,6 +2,7 @@
 @font-face {
     font-family: 'CubaoFreeRegular';
     src: url('fonts/Cubao_Free_Regular.otf') format('opentype');
+    /* Añade otros formatos de fuente según sea necesario */
 }
 
 /* Define @font-face para la fuente Muli Black */
@@ -16,10 +17,10 @@
 body {
     font-family: 'Muli', Arial, sans-serif;
     font-size: 22px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Convierte todo el texto a mayúsculas */
     margin: 0;
     padding: 0;
-    background-image: url('https://i.imgur.com/wqNKDQk.png');
+    background-image: url('https://i.imgur.com/wqNKDQk.png'); /* Fondo de la página */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -31,20 +32,20 @@ body {
     position: relative;
     text-align: center;
     max-width: 400px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* Fondo del formulario con opacidad */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 10px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 40px; /* Aumentado el margen superior para dar más espacio */
 }
 
 .profile-wrapper {
     position: absolute;
-    top: -70px;
+    top: -70px; /* Ajustado para subir un poco más */
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Reducir el tamaño del círculo */
+    height: 100px; /* Reducir el tamaño del círculo */
     background-color: #fff;
     border: 2px solid #ccc;
     border-radius: 50%;
@@ -55,26 +56,29 @@ body {
 .profile-img {
     width: 100%;
     height: 100%;
-    background-image: url('https://i.imgur.com/Pzp3htD.png');
+    background-image: url('https://i.imgur.com/Pzp3htD.png'); /* Reemplaza con el enlace directo de Imgur */
     background-size: cover;
     background-position: center;
 }
 
 h2 {
     margin-top: 20px;
-    font-family: 'CubaoFreeRegular', Arial, sans-serif; 
+    font-family: 'CubaoFreeRegular', Arial, sans-serif !important;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 22px;
 }
 
+/* Aplicar la fuente Muli-Black solo a las secciones específicas y cambiar el tamaño de la fuente */
 #booking label[for="service"],
 #booking label[for="date"],
-#booking label[for="time"],
-h2 {
+#booking label[for="time"] {
     font-family: 'Muli-Black', Arial, sans-serif !important;
     font-weight: 900;
-    text-transform: uppercase;
-    font-size: 15px !important;
-    color: #333;
-    margin-bottom: 5px;
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    font-size: 15px !important; /* Especificar el tamaño de la fuente */
+    color: #333; /* Color de texto */
+    margin-bottom: 5px; /* Espaciado inferior */
 }
 
 form {
@@ -86,30 +90,28 @@ form label, form select, form input, form button {
     margin-bottom: 10px;
 }
 
-.time-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#time-hour, #time-minute {
-    width: 50px;
-    margin: 0 5px;
-}
-
-.time-separator {
-    margin: 0 5px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 footer {
     text-align: center;
     padding: 10px 0;
-    background: rgba(51, 51, 51, 0.9);
+    background: rgba(51, 51, 51, 0.9); /* Fondo del footer con opacidad */
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Ajustes para los selectores de hora y minutos */
+.time-select-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#time-hour,
+#time-minute {
+    width: 50px;
+}
+
+.colon {
+    padding: 0 5px;
 }
 
