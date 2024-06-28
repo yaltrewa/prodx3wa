@@ -20,7 +20,6 @@ body {
     background-image: url('https://i.imgur.com/wqNKDQk.png');
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -62,12 +61,12 @@ body {
 }
 
 #booking h2 {
-    font-family: 'CubaoFreeRegular', Arial, sans-serif !important; /* CubaoFreeRegular con !important */
+    font-family: 'CubaoFreeRegular', Arial, sans-serif !important;
     font-weight: normal;
-    font-size: 26px; /* Tamaño específico para el título RESERVA DE SERVICIOS */
+    font-size: 26px;
     color: #EBEBEB;
     text-transform: uppercase;
-    margin-bottom: 20px; /* Aumentar el margen inferior */
+    margin-bottom: 20px;
 }
 
 #booking label[for="service"],
@@ -109,30 +108,22 @@ form input {
     padding: 0 5px;
 }
 
-.instagram-logo {
-    width: 30px; /* Ajusta el tamaño según prefieras */
-    height: auto;
-    margin-bottom: 10px; /* Espacio entre el logo y el footer */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 footer {
     text-align: center;
-    padding: 5px 0; /* Reducir el padding para hacer el recuadro más pequeño */
+    padding: 5px 0;
     background: rgba(51, 51, 51, 0.9);
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
-    font-size: 12px; /* Reducir el tamaño del texto */
+    font-size: 12px;
 }
 
 footer p {
-    margin: 0; /* Eliminar el margen interno */
+    margin: 0;
 }
 
-footer span {
-    font-weight: bold;
+footer a img {
+    width: 30px;
+    margin-bottom: 5px;
 }
