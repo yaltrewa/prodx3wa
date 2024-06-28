@@ -64,8 +64,8 @@ body {
 #booking label[for="date"],
 #booking label[for="time"],
 #booking h2 {
-    font-family: 'Muli-Black', Arial, sans-serif !important;
-    font-weight: 900;
+    font-family: 'CubaoFreeRegular', Arial, sans-serif !important; /* Cambiado a CubaoFreeRegular */
+    font-weight: normal; /* Ajustado a normal para CubaoFreeRegular */
     font-size: 15px !important;
     color: #EBEBEB !important;
     margin-bottom: 5px;
@@ -117,4 +117,3 @@ footer p {
 footer span {
     font-weight: bold;
 }
-
