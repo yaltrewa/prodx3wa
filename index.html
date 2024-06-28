@@ -35,10 +35,10 @@
             <button type="submit">Reservar</button>
         </form>
     </section>
-    <a href="https://www.instagram.com/tu_perfil/" target="_blank">
-        <img src="images/logoinstagram.png" alt="Instagram" class="instagram-logo">
-    </a>
     <footer>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/logoinstagram.png" alt="Instagram">
+        </a>
         <p>&copy; 2024 PRODX3WA. Todos los derechos reservados.</p>
     </footer>
 
@@ -48,7 +48,6 @@
             const timeHourSelect = document.getElementById('time-hour');
             const timeMinuteSelect = document.getElementById('time-minute');
             
-            // Generar opciones de hora de 9 a 20 sin minutos
             for (let hour = 9; hour <= 20; hour++) {
                 const option = document.createElement('option');
                 option.text = hour < 10 ? `0${hour}` : `${hour}`;
@@ -56,7 +55,6 @@
                 timeHourSelect.add(option);
             }
 
-            // Validar y enviar el formulario
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
                 const service = document.getElementById('service').value;
@@ -68,7 +66,6 @@
                 window.open(whatsappUrl, '_blank');
             });
 
-            // Establecer la fecha mínima como la fecha actual
             const today = new Date().toISOString().split('T')[0];
             document.getElementById('date').min = today;
         });
