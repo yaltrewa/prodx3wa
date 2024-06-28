@@ -109,10 +109,3 @@ footer {
     bottom: 0;
 }
 
-h2 {
-    margin-top: 30px; /* Ajusta este valor según el espacio adicional que desees */
-    font-family: 'CubaoFreeRegular', Arial, sans-serif !important;
-    text-transform: uppercase;
-    color: #EBEBEB;
-    font-size: 22px;
-}
