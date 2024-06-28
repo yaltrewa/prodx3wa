@@ -115,3 +115,16 @@ h2 {
     color: #333;
     font-size: 22px;
 }
+
+#booking {
+    background: rgba(25, 23, 23, 0.9); /* Fondo del formulario con color #191717 */
+    color: #EBEBEB; /* Color de texto dentro del formulario */
+}
+
+#booking label,
+#booking select,
+#booking input,
+#booking button,
+h2 {
+    color: #EBEBEB !important; /* Color de texto específico para elementos dentro del formulario */
+}
