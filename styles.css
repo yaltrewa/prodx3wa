@@ -20,6 +20,7 @@ body {
     background-image: url('https://i.imgur.com/wqNKDQk.png');
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -108,23 +109,13 @@ form input {
     padding: 0 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 5px 0; /* Reducir el padding para hacer el recuadro más pequeño */
-    background: rgba(51, 51, 51, 0.9);
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 12px; /* Reducir el tamaño del texto */
-}
-
-footer p {
-    margin: 0; /* Eliminar el margen interno */
-}
-
-footer span {
-    font-weight: bold;
+.instagram-logo {
+    width: 30px; /* Ajusta el tamaño según prefieras */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre el logo y el footer */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -145,10 +136,3 @@ footer p {
 footer span {
     font-weight: bold;
 }
-
-footer img {
-    width: 30px; /* Ajusta el tamaño del ícono de Instagram según sea necesario */
-    vertical-align: middle; /* Alinea verticalmente con el texto */
-    margin-right: 5px; /* Espacio a la derecha del ícono */
-}
-
